@@ -1,6 +1,5 @@
 /**
  * Practice module for arrays in JavaScript
- * 
  */
 
 //Arrays
