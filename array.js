@@ -20,5 +20,16 @@ let myArray = ["first name","last name", "address"];
 myArray.forEach(item => {
     console.log(item);
 });
-
 console.log(Array.isArray(myArray));
+
+// Push() Method
+myArray.push("zip");
+console.log(myArray);
+
+// Shift() Method
+let firstElement = myArray.shift();
+console.log(firstElement);
+
+// Unshift() Method
+myArray.unshift("Primary Key");
+console.log(myArray);
