@@ -18,7 +18,20 @@ contacts.set('Justine', {phone: "333-222-1111", address: "123 Anywhere St."});
 contacts.set('Bridget', {phone: "444-555-6666", address: "456 Nowhere Ave."});
 contacts.has('Brian'); //TRUE
 contacts.get('Leon'); //UNDEFINED
-contacts.delete('Bridget'); //TRUE
+contacts.delete('Bridget'); //TRUE`
 
+console.log(contacts);
 console.log(contacts.size) //2
 
+const products = [
+    {name: 'Laptop', price: 3300, brand: 'apple'},
+    {name: 'iPhone', price: 1300, brand: 'apple'},
+    {name: 'Apple Watch', price: 399, brand: 'apple'},
+];
+
+let total = 0;
+const sumPrice = products.map(product => {
+    total += product.price;
+})
+
+console.log(total);
