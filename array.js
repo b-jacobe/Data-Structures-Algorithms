@@ -18,7 +18,6 @@ Array();
 // Declaration and output
 let myArray = ["first name","last name", "address"];
 
-
 // OLD METHOD
 //
 // let index = 0;
@@ -35,6 +34,9 @@ myArray.forEach(item => {
     console.log(item);
 });
 console.log(Array.isArray(myArray));
+
+//
+
 
 // Push() Method
 myArray.push("zip");
