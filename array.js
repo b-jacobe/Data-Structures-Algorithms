@@ -17,6 +17,20 @@ Array();
 
 // Declaration and output
 let myArray = ["first name","last name", "address"];
+
+
+// OLD METHOD
+//
+// let index = 0;
+// const price = [];
+//
+// while (index < myArray.length) {
+//  prices.push(myArray[index].price);
+//  index += 1; 
+// }
+
+// NEW METHOD
+// Higher-Order Function
 myArray.forEach(item => {
     console.log(item);
 });
