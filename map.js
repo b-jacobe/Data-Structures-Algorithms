@@ -31,7 +31,7 @@ const products = [
 
 let total = 0;
 const sumPrice = products.map(product => {
-    total += product.price;
+    return total += product.price;
 })
 
 console.log(total);
