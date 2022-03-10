@@ -35,3 +35,30 @@ const sumPrice = products.map(product => {
 })
 
 console.log(total);
+
+//DATA STRUCTURES
+
+//BEFORE
+const discount = (amount, code) => {
+    switch (code) {
+        case 'DIJFNC':
+            return amount * 0.80;
+        case 'XPFJVM':
+            return amount * 0.75;
+        case 'FJDPCX':
+            return amount * 0.50;
+        case '':
+            break;
+    }
+};
+
+//AFTER
+const DISCOUNT_MULTIPLIER = {
+    'DIJFNC':0.80,
+    'XPFJVM':0.75,
+    'FJDPCX':0.50,
+};
+
+const discount = (amount, code) => {
+    return amount * DISCOUNT_MULTIPLIER[code];
+}
