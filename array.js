@@ -33,10 +33,7 @@ let myArray = ["first name","last name", "address"];
 myArray.forEach(item => {
     console.log(item);
 });
-console.log(Array.isArray(myArray));
-
-//
-
+console.log(Array.isArray(myArray)); 
 
 // Push() Method
 myArray.push("zip");
