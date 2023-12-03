@@ -20,3 +20,9 @@ class Solution {
     }
 }
 
+//UNIT TEST
+const unitTest = new Solution();
+let trueArray = [1,2,3,4,5,6,7,1];
+let falseArray = [1,2,3,4,5];
+console.log(unitTest.containsDuplicate(trueArray));
+console.log(unitTest.containsDuplicate(falseArray));
