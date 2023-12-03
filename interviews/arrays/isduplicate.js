@@ -7,14 +7,14 @@
 class Solution {
     containsDuplicate(nums) {
         // TODO: Write your code here
-        let checkArray = [];
+        const checkArray = new Set();
         let isDuplicate = 0;
         for(let i = 0; i < nums.length;i++){
-            if(checkArray.includes(nums[i])){
-                isDuplicate += 1;
+            if(checkArray.has(nums[i])){
+                isDuplicate++;
                 break;
             }
-        checkArray.push(nums[i]);
+        checkArray.add(nums[i]);
         }
     return isDuplicate > 0;
     }
